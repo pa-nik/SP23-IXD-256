@@ -2,7 +2,7 @@
 
 Quick summary of Python programming, borrowed from [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/) in condensed form.
 
-```
+```python
 # Single line comments start with a number symbol.
 
 """ Multiline strings can be written
