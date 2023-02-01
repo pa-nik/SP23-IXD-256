@@ -17,3 +17,4 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
    
 [Blink LED Example](class02/blink_led.py)  
 [Fade LED Example](class02/fade_led.py)  
+[Digital Input Example](class02/button_led.py)  
