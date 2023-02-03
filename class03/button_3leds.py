@@ -11,19 +11,20 @@ program_state = 'GREEN'
 
 while True:
     if(ticks_ms() > timer_ms + 500):
-        if(program_state == 'GREEN'):
-            led_pin_green.off()
-            led_pin_yellow.on()
-            program_state = 'YELLOW'
-            print(program_state)
-        elif(program_state == 'YELLOW'):
-            led_pin_yellow.off()
-            led_pin_red.on()
-            program_state = 'RED'
-            print(program_state)
-        elif(program_state == 'RED'):
-            led_pin_red.off()
-            led_pin_green.on()
-            program_state = 'GREEN'
-            print(program_state)
+        if(button_pin.value() == 0):
+            if(program_state == 'GREEN'):
+                led_pin_green.off()
+                led_pin_yellow.on()
+                program_state = 'YELLOW'
+                print(program_state)
+            elif(program_state == 'YELLOW'):
+                led_pin_yellow.off()
+                led_pin_red.on()
+                program_state = 'RED'
+                print(program_state)
+            elif(program_state == 'RED'):
+                led_pin_red.off()
+                led_pin_green.on()
+                program_state = 'GREEN'
+                print(program_state)
         timer_ms = ticks_ms()
