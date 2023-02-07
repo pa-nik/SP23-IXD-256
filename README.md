@@ -12,7 +12,11 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [Editing files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)  
 [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)  
    
-
+### Fritzing Components  
+  
+[Atom Matrix](fritzing/atom_matrix.fzpz)  
+[NeoPixel Strip](fritzing/neopixel.fzpz)  
+  
 ### Class 01  
 
 [Python Review](class01/python-review.md)  
