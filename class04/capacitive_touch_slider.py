@@ -38,9 +38,9 @@ while True:
     neopixel_strip.write()
 
     #Debug section
-    print(loop_range)
-    print("1")
-    print(touch.read())  
+    print("Capacitive reading:",touch.read())  
+    print("Pixel light up:",loop_range)
+    print("")
 
     # Restrict the running speed with 100 ms
     sleep_ms(100)
