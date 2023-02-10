@@ -35,3 +35,5 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 ### Class 04
 
 [Capacitive Touch Slider](class04/capacitive_touch_slider.py)  
+[ADC Read](class04/adc_read.py)   
+[Potentiometer + NeoPixel](class04/potentiometer_neopixel.py)   
