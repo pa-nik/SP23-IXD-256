@@ -11,23 +11,27 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [GitHub Markdown Tutorial](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)  
 [Editing files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)  
 [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)  
-   
+
 ### Fritzing Components  
-  
+
 [Atom Matrix](fritzing/atom_matrix.fzpz)  
 [NeoPixel Strip](fritzing/neopixel.fzpz)  
-  
+
 ### Class 01  
 
 [Python Review](class01/python-review.md)  
-   
+
 ### Class 02   
-   
+
 [Blink LED Example](class02/blink_led.py)  
 [Fade LED Example (PWM)](class02/fade_led.py)  
 [Digital Input Example](class02/button_led.py)  
-   
+
 ### Class 03  
-  
+
 [3 LED Example](class03/button_3leds.py)  
 [NeoPixel Example](class03/fade_neopixel.py)  
+
+### Class 04
+
+[Capacitive Touch Slider](class04/capacitive_touch_slider.py)  
