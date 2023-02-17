@@ -16,6 +16,41 @@ calibration_val = 0  # sensor calibration value
 analog_val_adjusted = 0  # adjusted sensor value
 button_pin = Pin(39, Pin.IN)  # configure input on pin G39 (atom matrix display button)
 
+# define pixel maps for digits 0 and 1:
+digit_0 = [
+    0,1,1,1,0,
+    0,1,0,1,0,
+    0,1,0,1,0,
+    0,1,0,1,0,
+    0,1,1,1,0
+]
+digit_1 = [
+    0,1,1,0,0,
+    0,0,1,0,0,
+    0,0,1,0,0,
+    0,0,1,0,0,
+    0,1,1,1,0
+]
+# define some colors:
+red_color = (100, 0, 0)
+black_color = (0, 0, 0)
+
+# define a function to get color for a pixel:
+def get_pixel_color(n):
+    if(n == 0):
+        return black_color
+    else:
+        return red_color
+    
+# define a function to display a digit:
+def display_digit(n):
+    for i in range(25):
+        if(n == 0):
+            neopixel_strip[i] = get_pixel_color(digit_0[i])
+        else:
+            neopixel_strip[i] = get_pixel_color(digit_1[i])
+    neopixel_strip.write()
+    
 # map an input value (v_in) between min/max ranges:
 def map_value(in_val, in_min, in_max, out_min, out_max):
     v = out_min + (in_val - in_min) * (out_max - out_min) / (in_max - in_min)
@@ -51,7 +86,7 @@ while True:
             analog_val_25 = map_value(analog_val_adjusted, 0, 4095, 0, 25)
         
         print(analog_val_25)
-        
+
         for pixel_index in range(25):
             if(pixel_index < analog_val_25):  # pixel index is less than ADC value
                 neopixel_strip[pixel_index] = (255, 0, 0)
