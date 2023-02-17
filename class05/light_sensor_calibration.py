@@ -9,9 +9,11 @@ adc.atten(ADC.ATTN_11DB)  # set 11dB attenuation (2.45V range)
 neopixel_pin = Pin(27, Pin.OUT)  # configure output on pin G27 (atom matrix display)
 neopixel_strip = NeoPixel(neopixel_pin, 25)  # create NeoPixel object with 25 pixels
 
+# light sensor calibration
 sensor_timer = ticks_ms()  # create a timer variable and save current time
 program_state = 'CALIBRATION' # variable to keep track of program state
 calibration_val = 0  # sensor calibration value
+button_pin = Pin(39, Pin.IN)  # configure input on pin G39 (atom matrix display button)
 
 # map an input value (v_in) between min/max ranges:
 def map_value(in_val, in_min, in_max, out_min, out_max):
@@ -32,7 +34,14 @@ while True:
         # map ADC value from 0 - 4095 range to 0 - 30
         analog_val_25 = map_value(analog_val, 0, 4095, out_min = 0, out_max = 25)
         print(analog_val_25)
-        
+
+        if(program_state == 'CALIBRATION'):
+            if(button_pin.value() == 0):  # button_pin is low
+                calibration_val = analog_val
+                print('calibration finished..')
+                program_state = 'DEFAULT'
+                print('change program_state to ' + program_state)
+            
         for pixel_index in range(25):
             if(pixel_index < analog_val_25):  # pixel index is less than ADC value
                 neopixel_strip[pixel_index] = (255, 0, 0)
