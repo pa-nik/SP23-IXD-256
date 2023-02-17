@@ -13,6 +13,7 @@ neopixel_strip = NeoPixel(neopixel_pin, 25)  # create NeoPixel object with 25 pi
 sensor_timer = ticks_ms()  # create a timer variable and save current time
 program_state = 'CALIBRATION' # variable to keep track of program state
 calibration_val = 0  # sensor calibration value
+analog_val_adjusted = 0  # adjusted sensor value
 button_pin = Pin(39, Pin.IN)  # configure input on pin G39 (atom matrix display button)
 
 # map an input value (v_in) between min/max ranges:
@@ -33,7 +34,7 @@ while True:
         # changing how many neopixels are colored using ADC value:
         # map ADC value from 0 - 4095 range to 0 - 30
         analog_val_25 = map_value(analog_val, 0, 4095, out_min = 0, out_max = 25)
-        print(analog_val_25)
+        
 
         if(program_state == 'CALIBRATION'):
             if(button_pin.value() == 0):  # button_pin is low
@@ -41,7 +42,16 @@ while True:
                 print('calibration finished..')
                 program_state = 'DEFAULT'
                 print('change program_state to ' + program_state)
-            
+        elif(program_state == 'DEFAULT'):
+            # adjust sensor reading using calibration value:
+            analog_val_adjusted = analog_val - calibration_val
+            # make sure adjusted value is never negative:
+            if(analog_val_adjusted < 0):
+                analog_val_adjusted = 0
+            analog_val_25 = map_value(analog_val_adjusted, 0, 4095, 0, 25)
+        
+        print(analog_val_25)
+        
         for pixel_index in range(25):
             if(pixel_index < analog_val_25):  # pixel index is less than ADC value
                 neopixel_strip[pixel_index] = (255, 0, 0)
