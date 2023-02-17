@@ -85,14 +85,24 @@ while True:
                 analog_val_adjusted = 0
             analog_val_25 = map_value(analog_val_adjusted, 0, 4095, 0, 25)
         
-        print(analog_val_25)
+            #print(analog_val_25)
+            print(f'{analog_val} {calibration_val}')
+            #print('analog_val = ' + str(analog_val))
+            #print(f'analog_val = {analog_val}')
 
+            if(analog_val > calibration_val + 100):
+                display_digit(1)
+            else:
+                display_digit(0)
+
+        '''
         for pixel_index in range(25):
             if(pixel_index < analog_val_25):  # pixel index is less than ADC value
                 neopixel_strip[pixel_index] = (255, 0, 0)
             else:
                 neopixel_strip[pixel_index] = (0, 0, 0)
         neopixel_strip.write()  # write color data to neopixels
+        '''
         '''
         # change of brightness of 30 pixels using ADC value:
         for pixel_index in range(25):
