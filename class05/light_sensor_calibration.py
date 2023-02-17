@@ -86,10 +86,11 @@ while True:
             analog_val_25 = map_value(analog_val_adjusted, 0, 4095, 0, 25)
         
             #print(analog_val_25)
-            print(f'{analog_val} {calibration_val}')
+            #print(f'{analog_val} {calibration_val}')
             #print('analog_val = ' + str(analog_val))
             #print(f'analog_val = {analog_val}')
-
+            print(analog_val, calibration_val)
+            
             if(analog_val > calibration_val + 100):
                 display_digit(1)
             else:
