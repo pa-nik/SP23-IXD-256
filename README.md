@@ -40,3 +40,7 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [Capacitive Touch Slider](class04/capacitive_touch_slider.py)  
 [ADC Read](class04/adc_read.py)   
 [Potentiometer + NeoPixel](class04/potentiometer_neopixel.py)   
+   
+### Class 05   
+   
+[IMU Example on Hackster.io](https://m5stack.hackster.io/324677/fun-with-atom-matrix-323e3b)  
