@@ -43,7 +43,7 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 
 ### Class 05   
 
-[Light Sensor codealibration](class05/light_sensor_calibration.py)
+[Light Sensor codealibration](class05/light_sensor_calibration.py)  
 [IMU Example on Hackster.io](https://m5stack.hackster.io/324677/fun-with-atom-matrix-323e3b)  
 
 ### Class 06
