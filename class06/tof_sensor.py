@@ -19,11 +19,10 @@ happy_face = [
     0,0xffffff,0xffffff,0xffffff,0
 ]
 rgb.set_screen(question_mark)
-
 program_state = '?'
 
-neopixel_pin = Pin(27, Pin.OUT)  # configure output on pin G27 (atom matrix display)
-neopixel_display = NeoPixel(neopixel_pin, 25)  # create NeoPixel object with 25 pixels
+#neopixel_pin = Pin(27, Pin.OUT)  # configure output on pin G27 (atom matrix display)
+#neopixel_display = NeoPixel(neopixel_pin, 25)  # create NeoPixel object with 25 pixels
 
 # map an input value (v_in) between min/max ranges:
 def map_value(in_val, in_min, in_max, out_min, out_max):
