@@ -6,6 +6,9 @@ import imu  # imports m5stack imu unit
 
 imu_sensor = imu.IMU()
 
+left_arrow = [0,0,0,0xffffff,0,0,0,0xffffff,0,0,0,0xffffff,0,0,0,0,0,0xffffff,0,0,0,0,0,0xffffff,0]
+right_arrow = [0,0xffffff,0,0,0,0,0,0xffffff,0,0,0,0,0,0xffffff,0,0,0,0xffffff,0,0,0,0xffffff,0,0,0]
+
 while True:
     acc_x = imu_sensor.acceleration[0]
     print(acc_x)
