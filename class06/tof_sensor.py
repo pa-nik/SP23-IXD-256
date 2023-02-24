@@ -4,6 +4,7 @@ from machine import Pin, ADC
 from time import *
 from neopixel import NeoPixel
 
+sleep_ms(100)
 tof_sensor = unit.get(unit.TOF, unit.PORTA)
 question_mark = [
     0, 0xff0000, 0xff0000, 0xff0000, 0,
@@ -41,6 +42,7 @@ while True:
         print(d)
         if(d < 1000):
             print('detected proximity!')
+            sleep_ms(100)
             rgb.set_screen(happy_face)
             program_state = 'happy'
     '''
