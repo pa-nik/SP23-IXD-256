@@ -20,6 +20,8 @@ happy_face = [
 ]
 rgb.set_screen(question_mark)
 
+program_state = '?'
+
 neopixel_pin = Pin(27, Pin.OUT)  # configure output on pin G27 (atom matrix display)
 neopixel_display = NeoPixel(neopixel_pin, 25)  # create NeoPixel object with 25 pixels
 
@@ -34,9 +36,14 @@ def map_value(in_val, in_min, in_max, out_min, out_max):
 
 while True:
     d = tof_sensor.distance  # get distance from ToF sensor
-    brightness = map_value(d, in_min = 0, in_max = 8192, out_min = 0, out_max = 255)
-    print(d)
+    #brightness = map_value(d, in_min = 0, in_max = 8192, out_min = 0, out_max = 255)
     #print(brightness)
+    if(program_state == '?'):
+        print(d)
+        if(d < 1000):
+            print('detected proximity!')
+            rgb.set_screen(happy_face)
+            program_state = 'happy'
     '''
     # change of brightness of 25 pixels using ToF value:
     for pixel_index in range(25):
