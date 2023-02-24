@@ -11,6 +11,13 @@ question_mark = [
     0, 0,        0xff0000, 0xff0000, 0,
     0, 0,        0,        0,        0,
     0, 0,        0xff0000, 0,        0]
+happy_face = [
+    0,0,0,0,0,
+    0,0xffffff,0,0xffffff,0,
+    0,0,0,0,0,
+    0xffffff,0,0,0,0xffffff,
+    0,0xffffff,0xffffff,0xffffff,0
+]
 rgb.set_screen(question_mark)
 
 neopixel_pin = Pin(27, Pin.OUT)  # configure output on pin G27 (atom matrix display)
@@ -28,8 +35,8 @@ def map_value(in_val, in_min, in_max, out_min, out_max):
 while True:
     d = tof_sensor.distance  # get distance from ToF sensor
     brightness = map_value(d, in_min = 0, in_max = 8192, out_min = 0, out_max = 255)
-    #print(d)
-    print(brightness)
+    print(d)
+    #print(brightness)
     '''
     # change of brightness of 25 pixels using ToF value:
     for pixel_index in range(25):
