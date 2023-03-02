@@ -17,7 +17,9 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 
 ### Fritzing Components  
 
-[Atom Matrix](fritzing/atom_matrix.fzpz)  
+[M5Stack Atom Matrix](fritzing/atom_matrix.fzpz)  
+[M5Stack Angle Unit](fritzing/m5stack_angle_unit.fzpz)  
+[M5Stack Light Unit](fritzing/m5stack_light_unit.fzpz)  
 [NeoPixel Strip](fritzing/neopixel.fzpz)  
 
 ### Class 01  
