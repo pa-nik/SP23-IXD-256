@@ -13,8 +13,8 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [GitHub Markdown Tutorial](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)  
 [Editing files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)  
 [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)  
-
-
+[lukasmaximus89/M5Stack-Fritzing GitHub Repository](https://github.com/lukasmaximus89/M5Stack-Fritzing)  
+   
 ### Fritzing Components  
 
 [M5Stack Atom Matrix](fritzing/atom_matrix.fzpz)  
