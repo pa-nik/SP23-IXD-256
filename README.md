@@ -49,6 +49,9 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [Light Sensor Calibration](class05/light_sensor_calibration.py)  
 [IMU Example on Hackster.io](https://m5stack.hackster.io/324677/fun-with-atom-matrix-323e3b)  
 
-### Class 06
+### Class 06  
 
-[Time of Flight Game](class06/Time_Of_Flight.py)
+[IMU Acceleration X](class06/imu_accx_tilt.py)  
+[Infrared Distance Sensor](class06/infrared_distance_sensor.py)  
+[Time-of-Flight Sensor](class06/tof_sensor.py)  
+[Time-of-Flight Game](class06/Time_Of_Flight.py)  
