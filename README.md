@@ -55,3 +55,7 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [Infrared Distance Sensor](class06/infrared_distance_sensor.py)  
 [Time-of-Flight Sensor](class06/tof_sensor.py)  
 [Time-of-Flight Game](class06/Time_Of_Flight.py)  
+  
+### Class 07  
+
+[Servo Example](class07/servo_test.py)  
