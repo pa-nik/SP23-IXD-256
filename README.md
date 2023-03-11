@@ -59,3 +59,7 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 ### Class 07  
 
 [Servo Example](class07/servo_test.py)  
+  
+### Class 08  
+
+[MQTT Publish Example](class08/mqtt_publish_test.py)  
