@@ -18,7 +18,7 @@ Provide a link to your MicroPython code and explain a few important parts that m
 
 To include code snippets, you can use the code block markdown, like this:
 
-```
+``` Python  
 if(input_val > 1000):  # sensor value higher than threshold
    led_pin.on()  # turn on LED
 ```
