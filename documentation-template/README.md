@@ -9,8 +9,8 @@ To format text into separate lines or paragraphs with [markdown syntax](https://
 Links can be inserted with [link text in square brackets] followed by (link URL in parantheses).  For example, the markdown for [link to this page](https://pa-nik.github.io/SP23-IXD-256/documentation-template/) on GitHub Pages is:  
 `[link to this page](https://pa-nik.github.io/SP23-IXD-256/documentation-template/)`  
   
-To insert images, the syntax is almost the same with the addition of exclamation point `!` before [image description in square brackets] followed by (image link in parentheses).  The image below is included with `![led and button circuit](c02_button_led_bb.jpg)` syntax:   
-![led and button circuit](c02_button_led_bb.jpg) 
+To insert images, the syntax is almost the same with the addition of exclamation point `!` before [image description in square brackets] followed by (image link in parentheses).  The image below is included with `![led and button circuit](../class02/button_led_bb.png)` syntax:   
+![led and button circuit](../class02/button_led_bb.png) 
 
 ## Implementation   
 
