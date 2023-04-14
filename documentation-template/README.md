@@ -1,6 +1,16 @@
 ## Introduction   
 
-Provide a description of your initial project idea and include images of the concept sketches that you created in Part 1 of this assignment.  Explain the reasoning behind your final choice of the project concept, whether it’s based on one of the initial sketches, a combination of or a departure from the original concepts.
+Provide a description of your initial project idea and include images of the concept sketches that you created in Part 1 of this assignment.  Explain the reasoning behind your final choice of the project concept, whether it’s based on one of the initial sketches, a combination of or a departure from the original concepts.  
+  
+### Formatting Tips  
+   
+To format text into separate lines or paragraphs with [markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), include at least 2 spaces at the end.  The extra spaces act as line breaks.  
+
+Links can be inserted with [link text in square brackets] followed by (link URL in parantheses).  For example, the markdown for [link to this page](https://pa-nik.github.io/SP23-IXD-256/documentation-template/) on GitHub Pages is:  
+`[link to this page](https://pa-nik.github.io/SP23-IXD-256/documentation-template/)`  
+  
+To insert images, the syntax is almost the same with the addition of exclamation point `!` before [image description in square brackets] followed by (image link in parentheses).  The image below is included with `![led and button circuit](c02_button_led_bb.jpg)` syntax:   
+![led and button circuit](c02_button_led_bb.jpg) 
 
 ## Implementation   
 
@@ -8,7 +18,12 @@ Explain your process of prototype development including all applicable aspects s
 
 ### Hardware
 
-List all the separate hardware components used in your project and briefly explain what they do.  Include a schematic diagram image (Fritzing is recommended, but hand-drawn is OK) showing all the wiring connections between the M5Stack Atom Matrix board and other components.  
+List all the separate hardware components used in your project and briefly explain what they do.  To create a list with markdown syntax, use `-`, `*`, or `+` characters with each line of text:  
+* item 1  
+* item 2   
+* etc.  
+
+Include a schematic diagram image (Fritzing is recommended, but hand-drawn is OK) showing all the wiring connections between the M5Stack Atom Matrix board and other components.  
 
 In addition, include at least one photo showing your hardware wiring.  This can be several close-ups with the goal of showing how the wiring connections are made.  
 
