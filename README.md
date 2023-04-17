@@ -63,3 +63,11 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 ### Class 08  
 
 [MQTT Publish Example](class08/mqtt_publish_test.py)  
+  
+### Extras  
+
+[BLE Keyboard Example](extras/ble_keyboard_example.py)  
+[ESP-NOW Receiver Example](extras/espnow_receiver_example.py)  
+[ESP-NOW Sender Example](extras/espnow_sender_example.py)  
+[IFTTT Webhook Example](extras/ifttt_webhook_example.py)  
+[Motor PWM Example](extras/motor_pwm_example.py)  
