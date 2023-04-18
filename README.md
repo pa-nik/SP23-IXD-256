@@ -71,3 +71,4 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [ESP-NOW Sender Example](extras/espnow_sender_example.py)  
 [IFTTT Webhook Example](extras/ifttt_webhook_example.py)  
 [Motor PWM Example](extras/motor_pwm_example.py)  
+[Web Serial Example](extras/web_serial_example/)  
